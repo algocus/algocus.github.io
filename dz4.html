@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ссылка внутри документа</title>
+    <style>
+        #f {
+            height: 100vh;
+            background-color: crimson;
+        }
+        #s {
+            height: 100vh;
+            background-color: #06ee72;
+        }
+        a {
+            font-size: 4em;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div id="f">
+        <a href="#s">Вниз</a>
+    </div>
+    <div id="s">
+        <a href="#f">Вверх</a>
+    </div>
+</body>
+</html>

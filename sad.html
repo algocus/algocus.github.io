@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container a {
+            font-size: 2em;
+            color: white;
+            text-decoration: khaki;
+            font-weight: bold;
+        }
+        .container {
+            border: 5px solid yellow;
+            padding: 5em;
+            border-radius: 5px;
+            transition: all ease .3s;
+        }
+        .navbar {
+            display: flex;
+            width: 100%;
+            background-color: greenyellow;
+            justify-content: space-between;
+            align-items: center;
+        }
+        body {
+            margin: 0;
+        }
+        .logo {
+            color: forestgreen;
+            padding: 1em;
+            font-weight: bold;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        .menu {
+            color: indigo;
+            font-weight: bold;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        .first, .second, .third {
+            height: 100vh;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+        .first {
+            background-color: gold;
+        }
+        .second {
+            background-color: goldenrod;
+        }
+        .third {
+            background-color: greenyellow;
+        }
+        .container:hover {
+            box-shadow: 4px 4px 0 0 darkgoldenrod;
+            transform: translate(-4px, -4px);
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            Logo
+        </div>
+        <div class="menu">
+            <a href="#home">Home</a>
+            <a href="#question">Question</a>
+            <a href="#about me">About me</a>
+        </div>
+    </div>
+    <div class="first" id="home">
+        <div class="container">
+            <a href="home.html">Home👑</a>
+        </div>
+    </div>
+    <div class="second" id="question">
+        <div class="container">
+            <a href="question.html">Question</a>
+        </div>
+    </div>
+    <div class="third" id="about me">
+        <div class="container">
+            <a href="about me.html">About me</a>
+        </div>
+    </div>
+</body>
+</html>

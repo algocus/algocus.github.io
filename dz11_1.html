@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: blueviolet;
+            overflow: hidden;
+            margin: 0;
+            display: flex;
+        }
+        .abc {
+            color: white;
+            font-size: 1em;
+            animation: slideIn forwards 2s ease-in-out;
+        }
+        @keyframes slideIn {
+            80% {
+                font-size: 3em;
+                padding: 2em;
+            }
+            100% {
+                padding: 1.75em;
+                font-size: 3em;
+                background-color: teal;
+                border-radius: 4px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="abc">
+        Привет мир!
+    </div>
+</body>
+</html>

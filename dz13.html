@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .falcone1 {
+            background-image: url(night.jpg);
+            height: 100vh;
+        }
+        .falcone2 {
+            background-image: url(night_flip.jpg);
+            height: 100vh;
+        }
+        .falcone1 {
+            opacity: 0.95;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+            display: block;
+        }
+        .falcone2 {
+            opacity: 0.95;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+        }
+        div {
+            padding: 1.75em 1em;
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-weight: 600;
+            font-size: 1.25em;
+            text-align: center;
+        }
+        .zvezda {
+            position: absolute;
+            top: 0;
+            background-color: white;
+        }
+        @keyframes falling_down {
+            0% {
+                top: -5px;
+            }
+            100% {
+                top: 199vh;
+            }
+        }
+        .zvezda:nth-child(1) {
+            width: 3px;
+            height: 3px;
+            left: 4vw;
+            animation: falling_down 7s .2.7s linear infinite;
+        }
+        .zvezda:nth-child(2) {
+            width: 3px;
+            height: 3px;
+            left: 14vw;
+            animation: falling_down 6s .3s linear infinite;
+        }
+        .zvezda:nth-child(3) {
+            width: 3px;
+            height: 3px;
+            left: 44vw;
+            animation: falling_down 5s .2.5s linear infinite;
+        }
+        .zvezda:nth-child(4) {
+            width: 3px;
+            height: 3px;
+            left: 62vw;
+            animation: falling_down 4s .3.1s linear infinite;
+        }
+        .zvezda:nth-child(5) {
+            width: 3px;
+            height: 3px;
+            left: 82vw;
+            animation: falling_down 3s .2.2s linear infinite;
+        }
+        .zvezda:nth-child(6) {
+            width: 3px;
+            height: 3px;
+            left: 102vw;
+            animation: falling_down 2s .2.8s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="falcone1"></div>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, rem.
+        </p>
+    </div>
+    <div class="falcone2"></div>
+    <div class="zvezda"></div>
+    <div class="zvezda"></div>
+    <div class="zvezda"></div>
+    <div class="zvezda"></div>
+    <div class="zvezda"></div>
+    <div class="zvezda"></div>
+</body>
+</html>
